@@ -12,8 +12,9 @@ pipeline {
 					}
 					stage ('stage-2') {
 										steps {
-												dir ('/mnt/test')
+												dir ('/mnt/test') {
 												sh 'mkdir github'
+												}
 										}
 					}
 			}
